@@ -6,7 +6,9 @@ pipeline{
                sh 'echo git cloned'
             }
             stage('git update'){
-                sh 'echo its a testing call'
+                steps{
+                    sh 'echo its a testing call'
+                }
             }
         }
     }
