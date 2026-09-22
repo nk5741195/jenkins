@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('git build'){
+            steps{
+               sh 'echo git cloned'
+            }
+        }
+    }
+}
